@@ -1,11 +1,13 @@
 package com.example.said_world;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -30,5 +32,9 @@ public class MainActivity extends AppCompatActivity {
             text1.setText("Hello World!");
         });
 
+        @SuppressLint("MissingInflatedId") Button button2 = findViewById(R.id.button2);
+        button2.setOnClickListener(v -> {
+            text1.setTextColor(ContextCompat.getColor(this, R.color.purple_200));
+        });
         }
     }
