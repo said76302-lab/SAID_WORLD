@@ -42,3 +42,4 @@ public class MainActivity extends AppCompatActivity {
         });
         }
     }
+    // Revert to default theme
