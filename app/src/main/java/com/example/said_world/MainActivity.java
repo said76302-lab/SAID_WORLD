@@ -1,6 +1,8 @@
 package com.example.said_world;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button button1 = findViewById(R.id.button1);
+        TextView text1 = findViewById(R.id.text1);
+        text1.setText("");
+        button1.setOnClickListener(v -> {
+            text1.setText("Hello World!");
+        });
+
+        }
     }
-}
