@@ -36,10 +36,6 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(v -> {
             text1.setTextColor(ContextCompat.getColor(this, R.color.purple_200));
         });
-        Button button3 = findViewById(R.id.button3);
-        button3.setOnClickListener(v -> {
-            text1.setBackgroundColor(ContextCompat.getColor(this, R.color.teal_200));
-        });
         }
     }
     // Revert to default theme
