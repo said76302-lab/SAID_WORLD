@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             text1.setText("Hello World!");
         });
 
-        @SuppressLint("MissingInflatedId") Button button2 = findViewById(R.id.button2);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button button2 = findViewById(R.id.button2);
         button2.setOnClickListener(v -> {
             text1.setTextColor(ContextCompat.getColor(this, R.color.purple_200));
         });
